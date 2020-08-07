@@ -1,0 +1,92 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+html , body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.hero{
+    background-image: url(../img/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 100vh;
+}
+p, a{
+font-size: 20px;
+}
+.small{
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 20vh;
+}
+.hero-logo{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20%;
+    width: 50%;
+    min-height: 200px;
+    padding: 5% 25%;
+    background-color: black;
+}
+.centered{
+    text-align: center;
+}
+.w-80{
+width: 80%;
+margin-left: 10%;
+}
+.w-50{
+    max-width: 400px;
+    margin-left:calc( 50% - 200px);
+    }
+
+.mt-30{
+    margin-top: 30rem;
+}
+.mt-5{
+    margin-top: 5rem;
+}
+.mt-7{
+    margin-top: 7rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.btn{
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    border: 1px solid white;
+    margin-top:45rem;
+
+}
+.grid{
+    display: grid;
+    width: 100%;
+    height: 200px;
+}
+img{
+    width: 100%;
+}
+.col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+
+}
+.col-3 >* {
+    padding: 5%;
+}
+@media only screen and (max-width: 600px){
+    .to-1-col{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,11 +1,10 @@
 *{
-    font-family: 'Open Sans', sans-serif;
-}
+    font-family: 'Raleway', sans-serif;}
 html , body{
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: #F0f0f0;
+    color: rgb(14, 14, 14);
     width: 100%;
 }
 .hero{
@@ -14,10 +13,17 @@ html , body{
     background-size: cover;
     background-attachment: fixed; 
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 p, a{
 font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    font-weight: 500;
 }
 .small{
     background-image: url(../img/1.jpg);
@@ -31,22 +37,27 @@ font-size: 20px;
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -20%;
+    margin-top: -10%;
     width: 50%;
     min-height: 200px;
     padding: 5% 25%;
-    background-color: black;
+    background-color: #f0f0f0;
 }
 .centered{
     text-align: center;
+}
+.left-alighn
+{
+    text-align: left;
 }
 .w-80{
 width: 80%;
 margin-left: 10%;
 }
 .w-50{
-    margin-left:calc(50% - 150px);
-    width: 400px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
 }
 
 .mt-30{
@@ -61,36 +72,61 @@ margin-left: 10%;
 .mb-3{
     margin-bottom: 3rem;
 }
+.mb-5{
+    margin-bottom: 5rem;
+}
 .btn{
-    color: white;
+    color: #222;
     padding: 16px;
     text-decoration: none;
-    border: 1px solid white;
-    margin-top:45rem;
-
+    border: 1.2px solid #222;
+}
+.action{
+    background-color: #222;
+    color: white;
 }
 .grid{
     display: grid;
     width: 100%;
-    height: 200px;
+    grid-gap: 1rem;
 }
+
 img{
     width: 100%;
 }
+.col-2{
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
 .col-3{
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: left;
-
+    text-align: center;
 }
 .col-3 >* {
-    padding: 5%;
+align-content: center;
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 1000px){
+    .to-1-col{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 650px){
     .to-1-col{
         grid-template-columns: 1fr;
     }
     .w-50{
-        margin-left:10%;
+        margin: 1rem;
         width: auto;
+    }
+    .hero-logo{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -20%;
+        width: 70%;
+        min-height: 200px;
+        padding: 5% 15%;
+        background-color: #f0f0f0;
     }
 }
